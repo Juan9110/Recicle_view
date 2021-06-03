@@ -18,15 +18,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
+            android:fontFamily="cursive"
             android:text="@string/app_name"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
             android:textStyle="bold|italic" />
 
         <TextView
             android:id="@+id/txt_fecha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="cursive"
             android:text="@string/fecha_lanzamiento"
-            android:textStyle="bold" />
+            android:textColor="#06060B"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
     </LinearLayout>
 
 

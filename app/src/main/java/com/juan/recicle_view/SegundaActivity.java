@@ -21,6 +21,7 @@ public class SegundaActivity extends AppCompatActivity {
     private ActivitySegundaBinding binding;
     private TextView txt_dscripcion;
     private ImageView imagenview3;
+    private TextView txt_fecha;
 
 
     @Override
@@ -36,6 +37,7 @@ public class SegundaActivity extends AppCompatActivity {
 
         txt_dscripcion = findViewById(R.id.txt_descripcion);
         imagenview3 = findViewById(R.id.imageView3);
+        txt_fecha = findViewById(R.id.txt_fecha);
         Intent intent = getIntent();
 
         int poscion = intent.getIntExtra("Posicion",0);
@@ -43,6 +45,7 @@ public class SegundaActivity extends AppCompatActivity {
         toolBarLayout.setTitle(anime.nombre());
         txt_dscripcion.setText(anime.getDescripcion());
         imagenview3.setImageResource(anime.imagen());
+        txt_fecha.setText("Fecha de lanzamiento " + anime.getString_fecha());
 
         FloatingActionButton fab = binding.fab1;
         fab.setOnClickListener(new View.OnClickListener() {

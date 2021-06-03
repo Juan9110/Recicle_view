@@ -15,7 +15,8 @@ public class Anime {
         this.descripcion = descripcion;
         this.nombre = nombre;
         this.imagen = imagen;
-        this.fecha = fecha;
+        this.fecha = (Calendar) fecha.clone();
+
 
 
     }
@@ -46,6 +47,12 @@ public class Anime {
 
         return fecha;
 }
+public String getString_fecha(){
+        String feche_string = fecha.get(Calendar.DAY_OF_MONTH) + "/" + fecha.get(Calendar.MONTH ) + "/" + fecha.get(Calendar.YEAR);
+
+          return feche_string;
+    }
+
 
 
 
